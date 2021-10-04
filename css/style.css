@@ -13,6 +13,7 @@ body {
 h1,
 h2,
 h3,
+h4,
 p {
   margin-top: 0;
   margin-bottom: 0;
@@ -140,6 +141,27 @@ a {
   list-style-type: none;
   padding: 0;
   margin: 0;
+}
+.mail-logo {
+  width: 10px;
+  height: 16px;
+  align-items: center;
+  margin-right: 10px;
+}
+.mail-logo:hover,
+.mail-logo:focus {
+  fill: var(--blue);
+}
+.tel-logo {
+  content: icon;
+  align-items: center;
+  width: 16px;
+  height: 12px;
+  margin-right: 10px;
+}
+.mail-icon {
+  display: flex;
+  align-items: center;
 }
 
 .line {
@@ -391,4 +413,32 @@ img {
 }
 .card.card-md .card-header svg {
   width: 70px;
+}
+/*------------SECTION-BRAND-LOGO------*/
+.h4-title {
+  font-style: 700;
+  font-size: 36px;
+  line-height: 1.16em;
+  line-height: 100%;
+  text-align: Center;
+  vertical-align: Top;
+  letter-spacing: 3%;
+}
+.logo-md {
+  border: 2px solid #afb1b8;
+  border-radius: 4px;
+  width: 170px;
+  height: 92px;
+}
+.logo-md:hover,
+.logo-md:focus {
+  border: 2px solid var(--blue);
+}
+.logo-hover {
+  fill: #afb1b8;
+}
+.logo-hover:hover,
+.logo-hover:focus {
+  cursor: pointer;
+  fill: var(--blue);
 }
