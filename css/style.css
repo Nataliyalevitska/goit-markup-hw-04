@@ -1,0 +1,394 @@
+:root {
+  --blue: #2196f3;
+  --grey: #757575;
+  --white: #ffffff;
+  --light-grey: #f5f4fa;
+  --middle-grey: #afb1b8;
+}
+body {
+  font-family: "Roboto", sans-serif;
+  color: #212121;
+  margin: 0;
+}
+h1,
+h2,
+h3,
+p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+ul {
+  padding: 0;
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+.container {
+  width: 1200px;
+  margin: 0 auto;
+}
+.row {
+  display: flex;
+  margin: 0 -15px;
+}
+.col-2,
+.col-3,
+.col-4,
+.col-12 {
+  padding: 0 15px;
+}
+.col-2 {
+  width: 16.66%;
+}
+.col-3 {
+  width: 25%;
+}
+.col-4 {
+  width: 33.33%;
+}
+
+.col-12 {
+  width: 100%;
+}
+
+/*---------header---------------------*/
+.header-container {
+  display: flex;
+  align-items: center;
+}
+.logo {
+  color: var(--blue);
+}
+.header-logo {
+  text-transform: capitalize;
+  font-family: "Raleway", sans-serif;
+  font-size: 26px;
+  line-height: 1.19em;
+  color: #212121;
+  text-decoration: none;
+  margin: 24px 93px 25px 0;
+}
+.header-list {
+  display: flex;
+  align-items: center;
+}
+.nav-container {
+  display: flex;
+  align-items: center;
+}
+.header-item:not(:last-child) {
+  margin-right: 50px;
+}
+
+.nave {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14em;
+}
+.link {
+  color: #212121;
+  text-decoration: none;
+}
+.link:hover,
+.link:focus {
+  color: var(--blue);
+}
+.list {
+  list-style-type: none;
+}
+.grey {
+  color: var(--grey);
+  font-size: 14px;
+  line-height: 1.71em;
+}
+.header-connect {
+  display: flex;
+  margin-left: auto;
+}
+.connect {
+  display: flex;
+  align-items: center;
+}
+.header-mail {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14em;
+  letter-spacing: 0.02em;
+}
+.header-tel {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14em;
+  letter-spacing: 0.02em;
+  margin-left: 40px;
+}
+.link {
+  color: #212121;
+  text-decoration: none;
+}
+.link:hover,
+.link:focus {
+  color: var(--blue);
+}
+.grey {
+  color: var(--grey);
+  font-size: 14px;
+  line-height: 1.71em;
+}
+.list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.line {
+  border: 1px solid #ececec;
+}
+
+/*---------HEROY---------------------*/
+.hero-title {
+  padding-top: 200px;
+  margin-bottom: 0;
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36em;
+  color: var(--white);
+  text-transform: uppercase;
+  margin-bottom: 30px;
+}
+.container-hero {
+  text-align: center;
+  background-color: #2f303a;
+  min-height: 600px;
+  max-width: 1600px;
+  margin-left: auto;
+  margin-right: auto;
+
+  background-image: linear-gradient(
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url("../images/hero-title\ \(1\).jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.button-style {
+  cursor: pointer;
+  font-weight: bold;
+  padding: 10px 32px;
+  font-size: 16px;
+  line-height: 1.87em;
+  color: var(--white);
+  background-color: var(--blue);
+  min-width: 136px;
+  text-align: center;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+}
+.text-center {
+  text-align: center;
+}
+.d-fex {
+  display: flex;
+}
+
+/*-------------SECTION-----------------*/
+.h3-title {
+  margin-bottom: 0;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 1.14em;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+.p-title {
+  margin-top: 10px;
+  margin-bottom: 0;
+  font-size: 14px;
+  line-height: 1.74em;
+  color: var(--grey);
+  letter-spacing: 0.03em;
+}
+
+.h2-title {
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 1.16em;
+  letter-spacing: 0.03em;
+}
+.section-our-teams {
+  padding: 94px 0;
+}
+
+.team-specialist {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.18em;
+  letter-spacing: 0.03em;
+}
+.team-id {
+  font-size: 16px;
+  line-height: 1.18em;
+  color: var(--grey);
+  letter-spacing: 0.03em;
+  margin-bottom: 16px;
+}
+.social-link {
+  width: 44px;
+  height: 44px;
+  background-color: var(--white);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.social-link:hover,
+.social-link:focus {
+  background-color: var(--blue);
+}
+.social-link:hover .social-icon,
+.social-link:focus .social-icon {
+  fill: var(--white);
+}
+.social-icon {
+  fill: var(--middle-grey);
+}
+.social-list {
+  display: flex;
+  justify-content: center;
+}
+.social-item {
+  width: 44px;
+  height: 44px;
+  margin-right: 10px;
+  border-radius: 50%;
+}
+.social-item:last-child {
+  margin-right: 0;
+}
+.shadow-team {
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+}
+.team-br {
+  border-radius: 0px 0px 4px 4px;
+}
+img {
+  display: block;
+  max-width: 100%;
+}
+.team-member {
+  padding-top: 0;
+  padding-bottom: 20px;
+}
+.bg-light-grey {
+  background-color: var(--light-grey);
+}
+.bg-white {
+  background-color: var(--white);
+}
+
+/*-----------FOOTER----------------------*/
+.studio {
+  color: var(--white);
+  text-transform: capitalize;
+  font-family: "Raleway", sans-serif;
+  font-size: 26px;
+  line-height: 1.19em;
+  text-decoration: none;
+}
+.white {
+  color: var(--white);
+  font-size: 14px;
+  line-height: 1.71em;
+  text-decoration: none;
+}
+.footer {
+  background-color: #2f303a;
+}
+.mb-20 {
+  margin-bottom: 20px;
+  padding-top: 60px;
+}
+
+.ml-50 {
+  margin-left: 50px;
+}
+.mb-50 {
+  margin-bottom: 50px;
+}
+
+.mb-30 {
+  margin-bottom: 30px;
+}
+.mb-10 {
+  margin-bottom: 10px;
+}
+.mr-auto {
+  margin-right: auto;
+}
+.mb-94 {
+  margin-bottom: 94px;
+}
+.mb-9 {
+  margin-bottom: 9px;
+}
+.mb-60 {
+  padding-bottom: 60px;
+}
+
+/*-----------BUTTONS-------------------*/
+.d-flex-justify-center {
+  display: flex;
+  justify-content: center;
+}
+.ml-8 {
+  margin-left: 8px;
+}
+.button {
+  margin-top: 94px;
+  margin-bottom: 56px;
+  width: 103px;
+  height: 38px;
+  font-family: inherit;
+  cursor: pointer;
+  border: none;
+  background-color: #f5f4fa;
+  border-radius: 4px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.625em;
+}
+.button:hover,
+.button:focus {
+  color: var(--white);
+  background-color: var(--blue);
+}
+/*-------------SECTION-CARD------------*/
+.card-header {
+  margin-bottom: 20px;
+}
+.card-h3 {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2em;
+  margin-bottom: 4px;
+}
+.card-p {
+  font-size: 16px;
+  line-height: 1.875em;
+  color: var(--grey);
+  margin-bottom: 20px;
+}
+.card {
+  border: 1px solid #eeeeee;
+  margin-bottom: 30px;
+}
+.card.card-md {
+  border: none;
+}
+.card.card-md .card-header svg {
+  width: 70px;
+}
