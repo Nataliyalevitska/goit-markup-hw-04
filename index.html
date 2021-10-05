@@ -42,33 +42,27 @@
           </ul>
         </nav>
 
-        <div class="header-connect">
-          <ul class="list connect">
-            <li class="header-mail">
-              <div class="mail-icon">
-                <svg class="mail-logo">
-                  <use href="./images/symbol-defs.svg#icon-envelope-1"></use>
-                </svg>
-                <a class="link grey mail" href="mailto:info@devstudio"
-                  >info@devstudio.com</a
-                >
-              </div>
-            </li>
-
-            <li class="header-tel">
-              <svg class="tel-logo">
-                <use href="./images/symbol-defs.svg#icon-smartphone-1"></use>
+        <ul class="list connect">
+          <li class="header-mail">
+            <div class="mail-icon">
+              <svg class="mail-logo">
+                <use href="./images/symbol-defs.svg#icon-envelope-1"></use>
               </svg>
-              <a class="link grey" href="tel:+380991111111"
-                >+38 096 111 11 11</a
+              <a class="link grey mail" href="mailto:info@devstudio"
+                >info@devstudio.com</a
               >
-            </li>
-          </ul>
-        </div>
+            </div>
+          </li>
+
+          <li class="header-tel">
+            <svg class="tel-logo">
+              <use href="./images/symbol-defs.svg#icon-smartphone-1"></use>
+            </svg>
+            <a class="link grey" href="tel:+380991111111">+38 096 111 11 11</a>
+          </li>
+        </ul>
       </div>
     </header>
-
-    <div class="line"></div>
 
     <main>
       <!-----------HERO------------------------------------------>
@@ -84,7 +78,7 @@
 
       <!--------SECTION-------------------------------------------->
 
-      <section class="title mb-94">
+      <section class="section mb-94">
         <div class="container">
           <ul class="list row">
             <li class="col-3">
@@ -94,7 +88,7 @@
                     <use href="./images/symbol-defs.svg#icon-antenna-1-1"></use>
                   </svg>
                 </div>
-                <h3 class="h3-title">внимание к деталям</h3>
+                <h3 class="uppercase">внимание к деталям</h3>
                 <p class="p-title">
                   Идейные соображения,а также начало повседневной работы по
                   формированию позиции
@@ -108,7 +102,7 @@
                     <use href="./images/symbol-defs.svg#icon-clock-1-1"></use>
                   </svg>
                 </div>
-                <h3 class="h3-title">пунктуальность</h3>
+                <h3 class="uppercase">пунктуальность</h3>
                 <p class="p-title">
                   Задача организации,в особенности же рамки и место обучения
                   кадров влечет за собой.
@@ -122,7 +116,7 @@
                     <use href="./images/symbol-defs.svg#icon-diagram-1-1"></use>
                   </svg>
                 </div>
-                <h3 class="h3-title">планирование</h3>
+                <h3 class="uppercase">планирование</h3>
                 <p class="p-title">
                   Равным образом консультация с широким активом в значительной
                   степени обуславливает.
@@ -138,7 +132,7 @@
                     ></use>
                   </svg>
                 </div>
-                <h3 class="h3-title">современные технологии</h3>
+                <h3 class="uppercase">современные технологии</h3>
                 <p class="p-title">
                   Значимость этих проблем настолько очевидна,что реализация
                   плановых заданий
@@ -427,29 +421,78 @@
     <!--Підвал сторінки-->
     <footer class="footer">
       <div class="container">
-        <div class="mb-20">
-          <a class="studio logo-link" href="./index.html"
-            ><span class="logo">Web</span>Studio</a
-          >
-        </div>
-        <div class="footer-adress">
-          <address style="font-style: normal">
-            <ul class="list">
-              <li class="mb-9">
-                <a class="white" href="">г.Киев, пр-т Леси Украинки, 26</a>
-              </li>
-              <li class="mb-9">
-                <a class="link grey" href="mailto:info@example.com"
-                  >info@example.com</a
-                >
-              </li>
-              <li class="mb-60">
-                <a class="link grey" href="tel:+380991111111"
-                  >+38 099 111 11 11</a
-                >
-              </li>
-            </ul>
-          </address>
+        <div class="row">
+          <div class="col-3">
+            <div class="mb-20">
+              <a class="studio logo-link" href="./index.html"
+                ><span class="logo">Web</span>Studio</a
+              >
+            </div>
+            <div class="footer-adress">
+              <address style="font-style: normal">
+                <ul class="list">
+                  <li class="mb-9">
+                    <a class="white" href="">г.Киев, пр-т Леси Украинки, 26</a>
+                  </li>
+                  <li class="mb-9">
+                    <a class="link grey" href="mailto:info@example.com"
+                      >info@example.com</a
+                    >
+                  </li>
+                  <li>
+                    <a class="link grey" href="tel:+380991111111"
+                      >+38 099 111 11 11</a
+                    >
+                  </li>
+                </ul>
+              </address>
+            </div>
+          </div>
+          <div class="col-3">
+            <div>
+              <h3 class="white uppercase mb-20">Присоеденяйтесь</h3>
+              <div>
+                <ul class="list d-flex">
+                  <li class="social-item">
+                    <a href="" class="social-link dark">
+                      <svg class="dark-icon" width="20px" height="20">
+                        <use
+                          href="./images/symbol-defs.svg#icon-instagram-2-1"
+                        ></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="social-item">
+                    <a href="" class="social-link dark">
+                      <svg class="dark-icon" width="20px" height="20">
+                        <use
+                          href="./images/symbol-defs.svg#icon-twitter-1-1"
+                        ></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="social-item">
+                    <a href="" class="social-link dark">
+                      <svg class="dark-icon" width="20px" height="20">
+                        <use
+                          href="./images/symbol-defs.svg#icon-facebook-1-1"
+                        ></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="social-item">
+                    <a href="" class="social-link dark">
+                      <svg class="dark-icon" width="20px" height="20">
+                        <use
+                          href="./images/symbol-defs.svg#icon-linkedin-1-1"
+                        ></use>
+                      </svg>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </footer>

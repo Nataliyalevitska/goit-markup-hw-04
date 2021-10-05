@@ -18,6 +18,12 @@ p {
   margin-top: 0;
   margin-bottom: 0;
 }
+h3 {
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 1.14em;
+  letter-spacing: 0.03em;
+}
 ul {
   padding: 0;
   list-style: none;
@@ -25,9 +31,13 @@ ul {
 a {
   text-decoration: none;
 }
+.uppercase {
+  text-transform: uppercase;
+}
 .container {
   width: 1200px;
   margin: 0 auto;
+  padding: 0 15px;
 }
 .row {
   display: flex;
@@ -52,8 +62,41 @@ a {
 .col-12 {
   width: 100%;
 }
+.mb-20 {
+  margin-bottom: 20px;
+}
 
-/*---------header---------------------*/
+.ml-50 {
+  margin-left: 50px;
+}
+.mb-50 {
+  margin-bottom: 50px;
+}
+
+.mb-30 {
+  margin-bottom: 30px;
+}
+.mb-10 {
+  margin-bottom: 10px;
+}
+.mr-auto {
+  margin-right: auto;
+}
+.mb-94 {
+  margin-bottom: 94px;
+}
+.mb-9 {
+  margin-bottom: 9px;
+}
+.mb-60 {
+  padding-bottom: 60px;
+}
+
+/*----header------*/
+.header {
+  border: 1px solid #ececec;
+}
+
 .header-container {
   display: flex;
   align-items: center;
@@ -68,7 +111,8 @@ a {
   line-height: 1.19em;
   color: #212121;
   text-decoration: none;
-  margin: 24px 93px 25px 0;
+  margin-right: 93px;
+  padding: 25px 0;
 }
 .header-list {
   display: flex;
@@ -89,7 +133,6 @@ a {
 }
 .link {
   color: #212121;
-  text-decoration: none;
 }
 .link:hover,
 .link:focus {
@@ -103,13 +146,12 @@ a {
   font-size: 14px;
   line-height: 1.71em;
 }
-.header-connect {
-  display: flex;
+
+.connect {
   margin-left: auto;
 }
 .connect {
   display: flex;
-  align-items: center;
 }
 .header-mail {
   font-weight: 500;
@@ -124,10 +166,7 @@ a {
   letter-spacing: 0.02em;
   margin-left: 40px;
 }
-.link {
-  color: #212121;
-  text-decoration: none;
-}
+
 .link:hover,
 .link:focus {
   color: var(--blue);
@@ -153,7 +192,6 @@ a {
   fill: var(--blue);
 }
 .tel-logo {
-  content: icon;
   align-items: center;
   width: 16px;
   height: 12px;
@@ -164,11 +202,8 @@ a {
   align-items: center;
 }
 
-.line {
-  border: 1px solid #ececec;
-}
+/*-----HEROY-------*/
 
-/*---------HEROY---------------------*/
 .hero-title {
   padding-top: 200px;
   margin-bottom: 0;
@@ -207,6 +242,7 @@ a {
   min-width: 136px;
   text-align: center;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border: none;
 }
 .text-center {
   text-align: center;
@@ -215,15 +251,11 @@ a {
   display: flex;
 }
 
-/*-------------SECTION-----------------*/
-.h3-title {
-  margin-bottom: 0;
-  font-weight: bold;
-  font-size: 14px;
-  line-height: 1.14em;
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
+/*------SECTION------*/
+.section {
+  padding: 94px 0;
 }
+
 .p-title {
   margin-top: 10px;
   margin-bottom: 0;
@@ -312,7 +344,7 @@ img {
   background-color: var(--white);
 }
 
-/*-----------FOOTER----------------------*/
+/*- ------FOOTER- ------*/
 .studio {
   color: var(--white);
   text-transform: capitalize;
@@ -329,39 +361,18 @@ img {
 }
 .footer {
   background-color: #2f303a;
+  padding: 60px 0;
 }
-.mb-20 {
-  margin-bottom: 20px;
-  padding-top: 60px;
+.dark {
+  background-color: var(--grey);
 }
-
-.ml-50 {
-  margin-left: 50px;
+.dark-icon {
+  fill: var(--white);
 }
-.mb-50 {
-  margin-bottom: 50px;
+/*--------BUTTONS-------*/
+.d-flex {
+  display: flex;
 }
-
-.mb-30 {
-  margin-bottom: 30px;
-}
-.mb-10 {
-  margin-bottom: 10px;
-}
-.mr-auto {
-  margin-right: auto;
-}
-.mb-94 {
-  margin-bottom: 94px;
-}
-.mb-9 {
-  margin-bottom: 9px;
-}
-.mb-60 {
-  padding-bottom: 60px;
-}
-
-/*-----------BUTTONS-------------------*/
 .d-flex-justify-center {
   display: flex;
   justify-content: center;
@@ -388,9 +399,15 @@ img {
   color: var(--white);
   background-color: var(--blue);
 }
-/*-------------SECTION-CARD------------*/
+/*------SECTION-CARD------*/
 .card-header {
   margin-bottom: 20px;
+}
+.card-hover:hover,
+.card-hover:focus {
+  cursor: pointer;
+  border-radius: 6px;
+  box-shadow: rgba(0, 0, 0, 0.16);
 }
 .card-h3 {
   font-weight: 700;
@@ -414,7 +431,7 @@ img {
 .card.card-md .card-header svg {
   width: 70px;
 }
-/*------------SECTION-BRAND-LOGO------*/
+/*----SECTION-BRAND-LOGO------*/
 .h4-title {
   font-style: 700;
   font-size: 36px;
@@ -429,6 +446,7 @@ img {
   border-radius: 4px;
   width: 170px;
   height: 92px;
+  margin-bottom: 94px;
 }
 .logo-md:hover,
 .logo-md:focus {
