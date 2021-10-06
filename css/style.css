@@ -252,9 +252,6 @@ a {
 }
 
 /*------SECTION------*/
-.section {
-  padding: 94px 0;
-}
 
 .p-title {
   margin-top: 10px;
@@ -336,6 +333,7 @@ img {
 .team-member {
   padding-top: 0;
   padding-bottom: 20px;
+  text-align: center;
 }
 .bg-light-grey {
   background-color: var(--light-grey);
