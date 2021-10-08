@@ -38,68 +38,12 @@ a {
   padding: 94px 0;
 }
 
-.row {
-  display: flex;
-  margin: 0 -15px;
-}
-.col-2,
-.col-3,
-.col-4,
-.col-12 {
-  padding: 0 15px;
-}
-.col-2 {
-  width: 16.66%;
-}
-.col-3 {
-  width: 25%;
-}
-.col-4 {
-  width: 33.33%;
-}
-
-.col-12 {
-  width: 100%;
-}
-.mb-20 {
-  margin-bottom: 20px;
-}
-
-.ml-50 {
-  margin-left: 50px;
-}
-.mb-50 {
-  margin-bottom: 50px;
-}
-
-.mb-30 {
-  margin-bottom: 30px;
-}
-.mb-10 {
-  margin-bottom: 10px;
-}
-.mr-auto {
-  margin-right: auto;
-}
-
-.mb-9 {
-  margin-bottom: 9px;
-}
-.mb-60 {
-  padding-bottom: 60px;
-}
 .link {
   color: #212121;
 }
 .link:hover,
 .link:focus {
   color: var(--blue);
-}
-
-.grey {
-  color: var(--grey);
-  font-size: 14px;
-  line-height: 1.71em;
 }
 
 /*----HEADER----*/
@@ -243,7 +187,7 @@ a {
   margin-bottom: 10px;
 }
 
-/*-------engage-----*/
+/*-------ENGAGE-----*/
 
 .engage-caption-title {
   font-size: 36px;
@@ -261,6 +205,16 @@ a {
 
 /*-----TEAM-----*/
 
+.section-team {
+  background-color: var(--light-grey);
+}
+.team-title {
+  font-size: 36px;
+  line-height: calc(42 / 36);
+  text-align: center;
+  margin-bottom: 50px;
+}
+
 .team-card-specialist {
   display: flex;
   flex-basis: auto;
@@ -272,6 +226,8 @@ a {
   font-size: 16px;
   line-height: 1.18em;
   letter-spacing: 0.03em;
+  padding-top: 30px;
+  margin-bottom: 10px;
 }
 .team-specialist-name {
   font-size: 16px;
@@ -314,47 +270,112 @@ a {
 .team-social-item:last-child {
   margin-right: 0;
 }
-.shadow-team {
-  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
-    0px 2px 1px rgba(0, 0, 0, 0.2);
-}
-.team-br {
-  border-radius: 0px 0px 4px 4px;
-}
-img {
-  display: block;
-  max-width: 100%;
-}
+
 .team-member {
   padding-top: 0;
   padding-bottom: 20px;
   text-align: center;
-}
-.bg-light-grey {
-  background-color: var(--light-grey);
-}
-.bg-white {
   background-color: var(--white);
+  border-radius: 4px;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
 }
 
-/*- ------FOOTER- ------*/
-.studio {
+/*----BRAND--------*/
+
+.brand-title {
+  font-size: 36px;
+  line-height: calc(42 / 36);
+  text-align: Center;
+  letter-spacing: 3%;
+  margin-bottom: 50px;
+}
+.brand-logo-ticket {
+  display: flex;
+  justify-content: space-between;
+}
+.brand-logo-icon {
+  border: 2px solid var(--middle-grey);
+  border-radius: 4px;
+}
+.brand-logo-icon:hover,
+.brand-logo-icon:focus {
+  border: 2px solid var(--blue);
+}
+.brand-logo-hover {
+  fill: var(--middle-grey);
+}
+.brand-logo-hover:hover,
+.brand-logo-hover:focus {
+  cursor: pointer;
+  fill: var(--blue);
+}
+
+/*-----FOOTER------*/
+
+.footer {
+  background-color: #2f303a;
+  padding: 60px 0;
+}
+.footer-adres {
+  display: inline-block;
+  margin-right: 70px;
+}
+.footer-social {
+  display: inline-block;
+}
+.footer-social-gyu {
+}
+.footer-studio {
   color: var(--white);
   text-transform: capitalize;
   font-family: "Raleway", sans-serif;
   font-size: 26px;
-  line-height: 1.19em;
+  line-height: calc(31 / 26);
   text-decoration: none;
 }
-.white {
+.footer-logo {
+  color: var(--blue);
+}
+.footer-address-all {
+  padding-top: 20px;
+}
+.footer-address {
+  font-size: 14px;
+  line-height: calc(24 / 14);
+  line-height: 146%;
+  letter-spacing: 3%;
+  font-style: normal;
+  color: var(--white);
+  padding-bottom: 9px;
+}
+.footer-mailto {
+  color: var(--grey);
+  font-size: 14px;
+  line-height: calc(24 / 14);
+  font-style: normal;
+  padding-bottom: 9px;
+}
+
+.footer-telephone {
+  color: var(--grey);
+  font-size: 14px;
+  line-height: calc(24 / 14);
+  font-style: normal;
+}
+.footer-title {
   color: var(--white);
   font-size: 14px;
-  line-height: 1.71em;
+  line-height: calc(16 / 14);
   text-decoration: none;
 }
-.footer {
-  background-color: #2f303a;
-  padding: 60px 0;
+.footer-social-item {
+}
+.footer-social-link {
+  background-color: var(--grey);
+}
+.footer-dark-icon {
+  fill: var(--white);
 }
 .dark {
   background-color: var(--grey);
@@ -421,33 +442,4 @@ img {
 }
 .card.card-md .card-header svg {
   width: 70px;
-}
-/*----SECTION-BRAND-LOGO------*/
-.h4-title {
-  font-style: 700;
-  font-size: 36px;
-  line-height: 1.16em;
-  line-height: 100%;
-  text-align: Center;
-  vertical-align: Top;
-  letter-spacing: 3%;
-}
-.logo-md {
-  border: 2px solid #afb1b8;
-  border-radius: 4px;
-  width: 170px;
-  height: 92px;
-  margin-bottom: 94px;
-}
-.logo-md:hover,
-.logo-md:focus {
-  border: 2px solid var(--blue);
-}
-.logo-hover {
-  fill: #afb1b8;
-}
-.logo-hover:hover,
-.logo-hover:focus {
-  cursor: pointer;
-  fill: var(--blue);
 }
