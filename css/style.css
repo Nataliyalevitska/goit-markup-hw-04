@@ -7,6 +7,7 @@
   --middle-grey: #afb1b8;
   --hero-grey: #2f303a;
   --card-border: #eeeeee;
+  --hero-button: #188ce8;
 }
 body {
   font-family: "Roboto", sans-serif;
@@ -161,6 +162,10 @@ a {
   text-align: center;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border: none;
+  border-radius: 4px;
+}
+.hero-button:hover .hero-button:focus {
+  background-color: var(--hero-button);
 }
 
 /*------PRIORITIES------*/
